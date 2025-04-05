@@ -4,7 +4,7 @@ std::shared_ptr<Beverage> Menu:: chooseBeverage(){
         std::cout << "Choose Beverage!"<<std::endl;
         std::cout << i+1<<':';m_beverages[i] -> getndescription();
     }
-    int k;
+    size_t k;
     while (true)
     {
         std::cin >> k;

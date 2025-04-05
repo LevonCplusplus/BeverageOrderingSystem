@@ -9,6 +9,7 @@ int main(){
     menu -> addBeveragetoMenu(bev1);
     menu -> addBeveragetoMenu(bev2);
     menu -> addBeveragetoMenu(bev3);
+    menu -> addBeveragetoMenu(bev4);
     std::shared_ptr<OrderingSystem> CoffeHouse = OrderingSystem::createorderingsystem();
     CoffeHouse ->setmenu(std::move(menu));
     CoffeHouse ->createorder();

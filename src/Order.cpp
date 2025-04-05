@@ -1,4 +1,5 @@
 #include "Order.h"
+#include <limits>
 void Order:: addBeverage(std::shared_ptr<Beverage> bev){
     m_order.push_back(bev); 
     sum += bev -> cost();
@@ -18,6 +19,8 @@ void MobileOrder:: addBeverage(std::shared_ptr<Beverage> bev){
     sum += 500;
 }
 void MobileOrder:: setadress(){
+    std::cout << "insert your adress for delivery!!";
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::getline(std::cin,m_adress);
 } 
 void MobileOrder:: getsum(){
